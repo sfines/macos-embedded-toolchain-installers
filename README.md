@@ -21,6 +21,13 @@ All scripts assume a reasonably modern macOS machine (Intel or Apple Silicon) wi
 | [`install_stm32f4_discovery_rust_dev.sh`](./install_stm32f4_discovery_rust_dev.sh) | Rust embedded toolchain for the STM32F407VG (`thumbv7em-none-eabihf`) |
 | [`install_stm32f4_discovery_platformio_dev.sh`](./install_stm32f4_discovery_platformio_dev.sh) | PlatformIO + `ststm32` platform for the `stm32f4discovery` board |
 
+### micro:bit v2
+
+| Script | Purpose |
+|--------|---------|
+| [`install_microbit_v2_rust_dev.sh`](./install_microbit_v2_rust_dev.sh) | Rust embedded toolchain for the Nordic nRF52833 (`thumbv7em-none-eabihf`) |
+| [`install_microbit_v2_platformio_dev.sh`](./install_microbit_v2_platformio_dev.sh) | PlatformIO + `nordicnrf52` platform for the `bbcmicrobit_v2` board |
+
 ## Quick start
 
 Clone the repository somewhere convenient (the scripts are self-contained):
