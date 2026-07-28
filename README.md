@@ -42,6 +42,13 @@ All scripts assume a reasonably modern macOS machine (Intel or Apple Silicon) wi
 | [`install_teensy41_rust_dev.sh`](./install_teensy41_rust_dev.sh) | Rust toolchain for the Teensy 4.1 (`thumbv7em-none-eabihf`) with `teensy_loader_cli` |
 | [`install_teensy41_platformio_dev.sh`](./install_teensy41_platformio_dev.sh) | PlatformIO + `teensy` platform for the `teensy41` board |
 
+### Daisy Seed
+
+| Script | Purpose |
+|--------|---------|
+| [`install_daisy_seed_rust_dev.sh`](./install_daisy_seed_rust_dev.sh) | Rust toolchain for the Daisy Seed / STM32H750 (`thumbv7em-none-eabihf`) |
+| [`install_daisy_seed_platformio_dev.sh`](./install_daisy_seed_platformio_dev.sh) | PlatformIO + `ststm32` platform for the `daisy_seed` board |
+
 ## Quick start
 
 Clone the repository somewhere convenient (the scripts are self-contained):
