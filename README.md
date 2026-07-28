@@ -1,0 +1,46 @@
+# macOS Embedded Toolchain Installers
+
+A small collection of opinionated `zsh` installer scripts for setting up embedded-development toolchains on macOS.
+
+All scripts assume a reasonably modern macOS machine (Intel or Apple Silicon) with the user running as an administrator-ish account. They install/use [Homebrew](https://brew.sh) where needed and avoid global root-owned installs.
+
+## Toolchains
+
+### ESP32-WROOM
+
+| Script | Purpose |
+|--------|---------|
+| [`install_esp32_dev.sh`](./install_esp32_dev.sh) | Espressif ESP-IDF for the ESP32 (ESP32-WROOM-32, etc.) |
+| [`install_esp32_rust_dev.sh`](./install_esp32_rust_dev.sh) | Rust `esp-rs` toolchain with `espup` and `cargo-espflash` |
+| [`install_esp32_platformio_dev.sh`](./install_esp32_platformio_dev.sh) | PlatformIO + `espressif32` platform |
+
+### STM32F4 Discovery
+
+| Script | Purpose |
+|--------|---------|
+| [`install_stm32f4_discovery_rust_dev.sh`](./install_stm32f4_discovery_rust_dev.sh) | Rust embedded toolchain for the STM32F407VG (`thumbv7em-none-eabihf`) |
+| [`install_stm32f4_discovery_platformio_dev.sh`](./install_stm32f4_discovery_platformio_dev.sh) | PlatformIO + `ststm32` platform for the `stm32f4discovery` board |
+
+## Quick start
+
+Clone the repository somewhere convenient (the scripts are self-contained):
+
+```bash
+git clone https://github.com/sfines/macos-embedded-toolchain-installers.git
+cd macos-embedded-toolchain-installers
+chmod +x install_*.sh
+./install_<whatever>.sh
+```
+
+Most scripts add shell helpers (e.g. `get_idf`, `get_esp_rust`) to `~/.zshrc`, so after installation open a new terminal or run `source ~/.zshrc`.
+
+## Usage notes
+
+- These scripts are **idempotent-ish**: running them again will generally update existing installs or skip already-present components.
+- The Rust scripts explicitly check for an existing Rust toolchain before installing through Homebrew, so they won't clobber a working `rustup` setup.
+- Some installs (PlatformIO, `probe-rs-tools`, ESP-IDF tooling) can take several minutes because they download large toolchains or compile a lot of Rust code.
+- The scripts include notes about USB-to-UART / ST-Link drivers where relevant.
+
+## License
+
+These scripts are provided as-is. Use, modify, and share them however you like.
