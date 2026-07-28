@@ -49,6 +49,13 @@ All scripts assume a reasonably modern macOS machine (Intel or Apple Silicon) wi
 | [`install_daisy_seed_rust_dev.sh`](./install_daisy_seed_rust_dev.sh) | Rust toolchain for the Daisy Seed / STM32H750 (`thumbv7em-none-eabihf`) |
 | [`install_daisy_seed_platformio_dev.sh`](./install_daisy_seed_platformio_dev.sh) | PlatformIO + `ststm32` platform for the `daisy_seed` board |
 
+### RP2040 (Raspberry Pi Pico)
+
+| Script | Purpose |
+|--------|---------|
+| [`install_rp2040_rust_dev.sh`](./install_rp2040_rust_dev.sh) | Rust toolchain for RP2040 boards (`thumbv6m-none-eabi`) |
+| [`install_rp2040_platformio_dev.sh`](./install_rp2040_platformio_dev.sh) | PlatformIO + `raspberrypi` platform for the `rpipico` board |
+
 ## Quick start
 
 Clone the repository somewhere convenient (the scripts are self-contained):
