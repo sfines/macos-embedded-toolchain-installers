@@ -28,6 +28,13 @@ All scripts assume a reasonably modern macOS machine (Intel or Apple Silicon) wi
 | [`install_microbit_v2_rust_dev.sh`](./install_microbit_v2_rust_dev.sh) | Rust embedded toolchain for the Nordic nRF52833 (`thumbv7em-none-eabihf`) |
 | [`install_microbit_v2_platformio_dev.sh`](./install_microbit_v2_platformio_dev.sh) | PlatformIO + `nordicnrf52` platform for the `bbcmicrobit_v2` board |
 
+### Arduino Nano (ATmega328P)
+
+| Script | Purpose |
+|--------|---------|
+| [`install_arduino_nano_rust_dev.sh`](./install_arduino_nano_rust_dev.sh) | Rust AVR toolchain for the Arduino Nano / Elegoo Nano 3.0 (`avr-atmega328p`) |
+| [`install_arduino_nano_platformio_dev.sh`](./install_arduino_nano_platformio_dev.sh) | PlatformIO + `atmelavr` platform for the `nanoatmega328` board |
+
 ## Quick start
 
 Clone the repository somewhere convenient (the scripts are self-contained):
