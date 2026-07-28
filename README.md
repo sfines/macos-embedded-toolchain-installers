@@ -35,6 +35,13 @@ All scripts assume a reasonably modern macOS machine (Intel or Apple Silicon) wi
 | [`install_arduino_nano_rust_dev.sh`](./install_arduino_nano_rust_dev.sh) | Rust AVR toolchain for the Arduino Nano / Elegoo Nano 3.0 (`avr-atmega328p`) |
 | [`install_arduino_nano_platformio_dev.sh`](./install_arduino_nano_platformio_dev.sh) | PlatformIO + `atmelavr` platform for the `nanoatmega328` board |
 
+### Teensy 4.1
+
+| Script | Purpose |
+|--------|---------|
+| [`install_teensy41_rust_dev.sh`](./install_teensy41_rust_dev.sh) | Rust toolchain for the Teensy 4.1 (`thumbv7em-none-eabihf`) with `teensy_loader_cli` |
+| [`install_teensy41_platformio_dev.sh`](./install_teensy41_platformio_dev.sh) | PlatformIO + `teensy` platform for the `teensy41` board |
+
 ## Quick start
 
 Clone the repository somewhere convenient (the scripts are self-contained):
