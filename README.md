@@ -56,6 +56,13 @@ All scripts assume a reasonably modern macOS machine (Intel or Apple Silicon) wi
 | [`install_rp2040_rust_dev.sh`](./install_rp2040_rust_dev.sh) | Rust toolchain for RP2040 boards (`thumbv6m-none-eabi`) |
 | [`install_rp2040_platformio_dev.sh`](./install_rp2040_platformio_dev.sh) | PlatformIO + `raspberrypi` platform for the `rpipico` board |
 
+### RP2350 (Raspberry Pi Pico 2)
+
+| Script | Purpose |
+|--------|---------|
+| [`install_rp2350_rust_dev.sh`](./install_rp2350_rust_dev.sh) | Rust toolchain for RP2350 boards (`thumbv8m.main-none-eabihf`) |
+| [`install_rp2350_platformio_dev.sh`](./install_rp2350_platformio_dev.sh) | PlatformIO + `raspberrypi` platform for RP2350 boards as definitions become available |
+
 ## Quick start
 
 Clone the repository somewhere convenient (the scripts are self-contained):
